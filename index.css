@@ -2,26 +2,40 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
 
 #tiemToc {
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 20px;
+
+}
+
+@media (min-width: 769px) {
+  .thanhDieuHuong h1,
+  .thanhDieuHuong h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .thanhDieuHuong h1,
+  .thanhDieuHuong h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
 .thanhDieuHuong{
   background-color:#000000;
   position: fixed;
   width: 100%;
   top:0;
+  align-items: center;
 }
 .thanhDieuHuong ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 0;
 
 }
 .thanhDieuHuong ul li{
@@ -29,9 +43,15 @@
   color:white;
 }
 .thanhDieuHuong ul li h3 a{
+  text-decoration: none;
   padding: 10px 20px;
-  color:#00ff00;
+  color:#ffffff;
   cursor: pointer;
+  border: 1px solid;
+}
+.thanhDieuHuong ul li h3 a .fa-check{
+  color:#00ff00 !important;
+
 }
 
 @keyframes throw-rotate {
@@ -43,9 +63,13 @@
   color:white;
   transition: 0.5s;
 }
+/* het navbar */
+
+
 
 #tiemToc img{
   width: 100%;
+  margin-top: 500px;
 }
 
 .phone{
