@@ -25,12 +25,6 @@
     margin-bottom: 0;
   }
 }
-@media (max-width: 415px) {
-
- body{
-  display: none;
- }
-}
 
 .thanhDieuHuong {
   background-color: #000000;
