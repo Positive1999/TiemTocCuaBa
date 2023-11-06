@@ -2,32 +2,37 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 #tiemToc {
   border: 1px solid black;
   border-radius: 20px;
   padding: 20px;
-
-  
 }
 .thanhDieuHuong{
   background-color:#000000;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 .thanhDieuHuong ul{
-  list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
 }
 .thanhDieuHuong ul li{
-  padding: 10px 20px;
+  padding: 20px 20px;
   color:white;
-
 }
-
-
+.thanhDieuHuong ul li h3 a{
+  padding: 10px 20px;
+  color:#00ff00;
+  cursor: pointer;
+}
 
 @keyframes throw-rotate {
   0% { transform: rotate(0)}
@@ -41,4 +46,16 @@
 
 #tiemToc img{
   width: 100%;
+}
+
+.phone{
+  position: fixed;
+  bottom:50px;
+  left:20px;
+  z-index: 999;
+  background-color:white;
+  padding: 10px 20px;
+}
+.phone .tel{
+
 }
