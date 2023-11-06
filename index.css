@@ -7,30 +7,36 @@
 #tiemToc {
   border: 1px solid black;
   border-radius: 20px;
+  padding: 20px;
+
+  
+}
+.thanhDieuHuong{
+  background-color:#fff;
+}
+.thanhDieuHuong ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.thanhDieuHuong ul li:first-child{
+  background-color: aquamarine;
+  padding: 10px 20px;
+  color:rgb(54, 54, 54);
 }
 
-h1.tieuDeTiemToc {
-  text-align: center;
-  font-size: 26px;
-  color: #ff0000;
-  text-transform: uppercase;
-  padding: 20px 0;
+
+
+@keyframes throw-rotate {
+  0% { transform: translateX(-10px) rotate(0deg); opacity: 1;}
+  50% { transform: translateX(200px) rotate(180deg); }
+  100% { transform: translateX(-10px) rotate(0deg); }
 }
 
-.fa-solid.fa-scissors {
-  margin-right: 5px;
-  color: #111;
-  animation: spin 6s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+#scissors-icon {
+  animation: throw-rotate 10s linear infinite;
+ color:#111;
 }
 
 #tiemToc img{
