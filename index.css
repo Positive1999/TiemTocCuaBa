@@ -6,80 +6,137 @@
   box-sizing: border-box;
 }
 
-#tiemToc {
-
-}
+#tiemToc {}
 
 @media (min-width: 769px) {
+
   .thanhDieuHuong h1,
   .thanhDieuHuong h3 {
     font-size: 20px;
     margin-bottom: 0;
   }
 }
+
 @media (max-width: 768px) {
+
   .thanhDieuHuong h1,
   .thanhDieuHuong h3 {
     font-size: 16px;
     margin-bottom: 0;
   }
 }
-.thanhDieuHuong{
-  background-color:#000000;
+
+.thanhDieuHuong {
+  background-color: #000000;
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
   align-items: center;
 }
-.thanhDieuHuong ul{
+
+.thanhDieuHuong ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 0;
 
 }
-.thanhDieuHuong ul li{
+
+.thanhDieuHuong ul li {
   padding: 20px 20px;
-  color:white;
+  color: white;
 }
-.thanhDieuHuong ul li h3 a{
+
+.thanhDieuHuong ul li h3 a {
   text-decoration: none;
   padding: 10px 20px;
-  color:#ffffff;
+  color: #ffffff;
   cursor: pointer;
   border: 1px solid;
 }
-.thanhDieuHuong ul li h3 a .fa-check{
-  color:#00ff00 !important;
+
+.thanhDieuHuong ul li h3 a .fa-check {
+  color: #00ff00;
 
 }
 
 @keyframes throw-rotate {
-  0% { transform: rotate(0)}
-  100% { transform: rotate(360deg)}
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
 }
+
 #scissors-icon {
   animation: throw-rotate 10s linear infinite;
-  color:white;
+  color: white;
   transition: 0.5s;
 }
+
 /* het navbar */
 
 
 
-#tiemToc img{
+#tiemToc img {
   width: 100%;
-  margin-top: 500px;
+  margin-top: 65px;
 }
 
-.phone{
+.phone {
   position: fixed;
-  bottom:50px;
-  left:20px;
+  bottom: 30px;
+  left: 20px;
   z-index: 999;
-  background-color:white;
+  background-color: #000000;
   padding: 10px 20px;
+  border-radius: 10px;
 }
-.phone .tel{
 
+.phone .tel a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.phone .tel i {
+  text-decoration: none;
+  color: #00ff00;
+  font-size: 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  animation: phone 2s linear infinite;
+}
+
+@keyframes phone {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(-20deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
 }
