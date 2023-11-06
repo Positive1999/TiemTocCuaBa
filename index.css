@@ -25,6 +25,12 @@
     margin-bottom: 0;
   }
 }
+@media (max-width: 415px) {
+
+ body{
+  display: none;
+ }
+}
 
 .thanhDieuHuong {
   background-color: #000000;
@@ -74,12 +80,6 @@
   color: white;
   transition: 0.5s;
 }
-.lichCart{
-  display: flex;
-}
-.lichCart .cart{
-  margin-left: 50px;
-}
 /* het navbar */
 
 
@@ -95,7 +95,7 @@
 
 .phone {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 20px;
   z-index: 999;
   background-color: #000000;
