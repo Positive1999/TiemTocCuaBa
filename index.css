@@ -12,31 +12,31 @@
   
 }
 .thanhDieuHuong{
-  background-color:#fff;
+  background-color:#000000;
 }
 .thanhDieuHuong ul{
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
-.thanhDieuHuong ul li:first-child{
-  background-color: aquamarine;
+.thanhDieuHuong ul li{
   padding: 10px 20px;
-  color:rgb(54, 54, 54);
+  color:white;
+
 }
 
 
 
 @keyframes throw-rotate {
-  0% { transform: translateX(-10px) rotate(0deg); opacity: 1;}
-  50% { transform: translateX(200px) rotate(180deg); }
-  100% { transform: translateX(-10px) rotate(0deg); }
+  0% { transform: rotate(0)}
+  100% { transform: rotate(360deg)}
 }
-
 #scissors-icon {
   animation: throw-rotate 10s linear infinite;
- color:#111;
+  color:white;
+  transition: 0.5s;
 }
 
 #tiemToc img{
