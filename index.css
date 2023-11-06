@@ -1,0 +1,29 @@
+*{
+    padding:0; margin: 0;font-family: sans-serif;
+}
+
+#tiemToc{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.tieuDeTiemToc {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 26px; /* Kích thước chữ */
+    color: #ff0000; /* Màu chữ (ví dụ: đỏ) */
+    text-transform: uppercase; /* Chữ in hoa */
+    padding: 20px 0 ; /* Khoảng cách giữa tiêu đề và các phần tử xung quanh */
+  }
+  
+  .fa-solid.fa-scissors {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+    color:#111;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .fa-solid.fa-scissors {
+    animation: spin 6s linear infinite;
+  }
