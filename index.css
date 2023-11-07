@@ -6,12 +6,10 @@
   box-sizing: border-box;
 }
 
-#tiemToc {}
-
 @media (min-width: 769px) {
 
-  .thanhDieuHuong h1,
-  .thanhDieuHuong h3 {
+  .navbar1 h1,
+  .navbar1 h3 {
     font-size: 20px;
     margin-bottom: 0;
   }
@@ -19,14 +17,14 @@
 
 @media (max-width: 768px) {
 
-  .thanhDieuHuong h1,
-  .thanhDieuHuong h3 {
+  .navbar1 h1,
+  .navbar1 h3 {
     font-size: 16px;
     margin-bottom: 0;
   }
 }
 
-.thanhDieuHuong {
+.navbar1 {
   background-color: #000000;
   position: fixed;
   width: 100%;
@@ -34,7 +32,7 @@
   align-items: center;
 }
 
-.thanhDieuHuong ul {
+.navbar1 ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,12 +40,12 @@
 
 }
 
-.thanhDieuHuong ul li {
+.navbar1 ul li {
   padding: 20px 20px;
   color: white;
 }
 
-.thanhDieuHuong ul li h3 a {
+.navbar1 ul li h3 a {
   text-decoration: none;
   padding: 10px 20px;
   color: #ffffff;
@@ -55,7 +53,7 @@
   border: 1px solid;
 }
 
-.thanhDieuHuong ul li h3 a .fa-check {
+.navbar1 ul li h3 a .fa-check {
   color: #00ff00;
 
 }
@@ -78,11 +76,29 @@
 
 
 
-#tiemToc img {
+.banner img {
   width: 100%;
   margin-top: 55px;
 }
 /* het banner */
+
+#openStatus , #closeStatus{
+  border:1px solid #000000;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+}
+/* het oclock */
+
+
+.product-item .img{
+  text-align: center;
+}
+.product-item .img img{
+  width: 80%;
+}
+/* het product */
 
 
 
