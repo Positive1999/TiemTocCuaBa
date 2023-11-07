@@ -1,7 +1,7 @@
 @media (max-width: 429px) and (min-width:340px)  {
   .navbar1 ul li h1,
   .navbar1 ul li h3 {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 0;
   }
   .fa-scissors{
