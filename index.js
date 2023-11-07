@@ -1,5 +1,3 @@
-const scissorsIcon = document.getElementById('scissors-icon');
-
-scissorsIcon.addEventListener('click', function() {
-  this.classList.toggle('open');
-});
+function call(phoneNumber) {
+  window.location.href = 'tel:' + phoneNumber;
+}
