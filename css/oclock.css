@@ -23,14 +23,7 @@
 .oclock-detail h5{
     margin-top: 15px;
 }
-.oclock-detail .fa-xmark{
-   position: absolute;
-   top:15px;
-   right:15px;
-   font-size: 20px;
-   background-color: #ff0000bb;
-   padding: 5px;
-}
+
 .working-day{
     color: #00ff00bb;
     line-height: 80px;
