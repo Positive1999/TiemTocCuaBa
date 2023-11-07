@@ -65,61 +65,59 @@
     right: 20px;
     border-radius: 30px;
     padding: 8px 12px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     z-index: 9999;
+    background-color: #000;
+    padding: 10px 20px ;
   }
   
-  .circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #000;
-    color: #00ff00;
+  .contact-phone a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+  }
+  .contact-phone i{
+    color: #00ff00;
+    font-size: 20px;
     animation: phone 1s infinite ease;
     transition: 0.5s;
   }
   
   .sdt {
-    background-color: #000;
-    padding: 10px 20px ;
+    margin-left: 5px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    border-radius: 10px;
   }
 
 @keyframes phone {
   0% {
-    transform:translateY(10px);transition: 0.5s;
+    transform:rotate(20deg);
   }
 
   10% {
-    transform: translateX(20px);
+    transform:rotate(0deg);
   }
 
   20% {
-    transform:translateY(10px);transition: 0.5s;
+    transform:rotate(20deg);
   }
 
   40% {
-    transform: translateX(20px);
+    transform:rotate(0deg);
   }
 
   60% {
-    transform:translateY(10px);transition: 0.5s;
+    transform:rotate(20deg);
   }
 
   80% {
-    transform: translateX(20px);
+    transform:rotate(0deg);
   }
 
   100% {
-    transform:translateY(10px);
+    transform:rotate(20deg);
   }
 }
 
