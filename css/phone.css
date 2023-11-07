@@ -1,0 +1,123 @@
+/* .phone {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 999;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .phone .tel {
+    color: #ffffff;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .phone .tel i {
+    color: #00ff00;
+    font-size: 20px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+    animation: phone 1s linear infinite;
+    transition: 0.5s;
+  }
+  
+  @keyframes phone {
+    0% {
+      transform: rotate(15deg);transition: 0.5s;
+    }
+  
+    10% {
+      transform: rotate(0deg);
+    }
+  
+    20% {
+      transform: rotate(15deg);transition: 0.5s;
+    }
+  
+    40% {
+      transform: rotate(0deg);
+    }
+  
+    60% {
+      transform: rotate(15deg);transition: 0.5s;
+    }
+  
+    80% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(-20deg);
+    }
+  } */
+  /* het phone */
+
+
+  .contact-phone[title] {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 30px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #00ff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    animation: phone 1s infinite ease-in-out;
+  }
+  
+  .sdt {
+    color: #1b1919;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+@keyframes phone {
+  0% {
+    transform: rotate(15deg);transition: 0.5s;
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(15deg);transition: 0.5s;
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(15deg);transition: 0.5s;
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* het contact-phone */
