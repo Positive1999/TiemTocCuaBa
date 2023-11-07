@@ -1,4 +1,4 @@
-// function makeCall(phoneNumber) {
-//     window.location.href = 'tel:' + phoneNumber;
-//   }
+function makeCall(phoneNumber) {
+    document.location.href = 'tel:' + phoneNumber;
+  }
 
