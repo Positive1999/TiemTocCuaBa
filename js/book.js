@@ -10,7 +10,9 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-function book() {
+function book(event) {
+    event.preventDefault(); // Ngăn chặn mặc định của form (tải lại trang)
+
     var inputName = document.getElementById('name');
     var cutTypeSelect = document.getElementById('cut-type');
     var inputDay = document.getElementById('day');
