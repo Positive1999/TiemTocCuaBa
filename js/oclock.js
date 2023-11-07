@@ -3,7 +3,7 @@ var currentTime = new Date();
 var currentHour = currentTime.getHours();
 
 // Kiểm tra nếu thời gian hiện tại nằm trong khoảng mở cửa
-if (currentHour >= 8 && currentHour < 12 || currentHour >= 14 && currentHour < 18) {
+if (currentHour >= 8 && currentHour < 12 || currentHour >= 14 && currentHour < 19) {
   document.getElementById("openStatus").classList.remove("d-none"); // Hiển thị phần tử mở cửa
   document.getElementById("closeStatus").classList.add("d-none"); // Ẩn phần tử đóng cửa
 }else{
@@ -24,7 +24,4 @@ oclock.addEventListener('mouseout',()=>{
   oclocDetail.classList.remove('to');
 }) 
 
-// xmark.addEventListener('click', () => {
-//   oclocDetail.classList.remove('to');
-// });
  
