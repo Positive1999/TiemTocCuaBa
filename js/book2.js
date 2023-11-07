@@ -1,4 +1,4 @@
-var isEmailSent = false;
+var isMessageSent = false;
 
 function openModal(message) {
     var modal = document.querySelector('.modal');
@@ -6,8 +6,8 @@ function openModal(message) {
     modalMessage.textContent = message;
     modal.style.display = 'flex';
 
-    if (isEmailSent) {
-        // Nếu email đã được gửi thành công, hiển thị thông báo thành công
+    if (isMessageSent) {
+        // Nếu tin nhắn đã được gửi thành công, hiển thị thông báo thành công
         closeModal();
     }
 }
@@ -33,32 +33,30 @@ function book(event) {
     ) {
         openModal('Bạn cần nhập đủ thông tin!');
     } else {
-        var shopEmail = 'hieutran11525@gmail.com';
-        var subject = 'Đặt lịch mới từ khách hàng';
-
-        var body =
+        var recipientPhone = '0375811525'; 
+        var message =
             'Thông báo mới:\n\nTên người dùng: ' +
             inputName.value +
             '\nKiểu cắt: ' +
             cutTypeSelect.value +
-            '\n Ngày cắt: ' +
+            '\nNgày cắt: ' +
             inputDay.value +
             '\nSố điện thoại: ' +
             inputPhone.value;
 
-        var mailtoLink =
-            'mailto:' +
-            shopEmail +
-            '?subject=' +
-            encodeURIComponent(subject) +
-            '&body=' +
-            encodeURIComponent(body);
-
-        isEmailSent = false; // Đặt giá trị cờ là false trước khi gửi email
-
-        // Chuyển hướng đến liên kết mailto sau khi hiển thị thông báo thành công
-        openModal('Đặt lịch thành công!');
-        window.location.href = mailtoLink;
+        // Gửi tin nhắn qua Zalo
+        ZaloSocialSDK.sendMessageToPhoneNumber(
+            recipientPhone,
+            message,
+            function (response) {
+                if (response && response.error === 0) {
+                    isMessageSent = true; 
+                    openModal('Đặt lịch thành công!');
+                } else {
+                    openModal('Đặt lịch thất bại!');
+                }
+            }
+        );
     }
 
     inputName.value = '';
@@ -66,5 +64,3 @@ function book(event) {
     inputDay.value = '';
     inputPhone.value = '';
 }
-
-
