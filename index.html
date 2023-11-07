@@ -41,20 +41,25 @@
         </div>
         <!-- het so ng dat lich -->
 
-        
+
 
 
         <div class="phone">
             <div class="tel">
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:0334936638">0334.936.638</a>
+                <a href="" onclick="call('0334936638')">0334.936.638</a>
 
             </div>
         </div>
     </div>
 
 
-    <script></script>
+    <script>
+        function call(phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+    </script>
+
 </body>
 
 </html>
