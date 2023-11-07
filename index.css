@@ -87,7 +87,7 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
-  
+
 }
 /* het oclock */
 
@@ -113,7 +113,7 @@
   border-radius: 10px;
 }
 
-.phone .tel a {
+.phone .tel span {
   text-decoration: none;
   color: #ffffff;
   font-weight: bolder;
