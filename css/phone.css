@@ -59,15 +59,15 @@
   /* het phone */
 
 
-  .contact-phone[title] {
+  .contact-phone {
     position: fixed;
     bottom: 10px;
     right: 20px;
     border-radius: 30px;
     padding: 8px 12px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     z-index: 9999;
   }
   
@@ -80,43 +80,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    animation: phone 1s infinite ease-in-out;
+    animation: phone 1s infinite ease;
+    transition: 0.5s;
   }
   
   .sdt {
-    color: #1b1919;
+    background-color: #000;
+    padding: 10px 20px ;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 10px;
   }
 
 @keyframes phone {
   0% {
-    transform: rotate(15deg);transition: 0.5s;
+    transform:translateY(10px);transition: 0.5s;
   }
 
   10% {
-    transform: rotate(0deg);
+    transform: translateX(20px);
   }
 
   20% {
-    transform: rotate(15deg);transition: 0.5s;
+    transform:translateY(10px);transition: 0.5s;
   }
 
   40% {
-    transform: rotate(0deg);
+    transform: translateX(20px);
   }
 
   60% {
-    transform: rotate(15deg);transition: 0.5s;
+    transform:translateY(10px);transition: 0.5s;
   }
 
   80% {
-    transform: rotate(0deg);
+    transform: translateX(20px);
   }
 
   100% {
-    transform: rotate(-20deg);
+    transform:translateY(10px);
   }
 }
 

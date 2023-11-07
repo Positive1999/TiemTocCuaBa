@@ -5,6 +5,9 @@
     .oclock h4{
       font-size:large;
     }
+    .contact-phone .sdt{
+      display: none;
+    }
   }
   @media (min-width: 769px) {
   
