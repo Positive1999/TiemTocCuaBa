@@ -1,0 +1,49 @@
+.oclock{
+    display: inline-block;
+    overflow: hidden;
+}
+#openStatus , #closeStatus{
+    padding: 10px 20px;
+    width: 300px;
+  }
+
+.oclock-detail {
+    position: fixed;
+    top:50%;
+    left:-100%;
+    transform: translateY(-50%);
+    width: 350px;
+    height:350px;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    transition: 10s;
+}
+.oclock-detail h5{
+    margin-top: 15px;
+}
+.oclock-detail .fa-xmark{
+   position: absolute;
+   top:15px;
+   right:15px;
+   font-size: 20px;
+   background-color: #ff0000bb;
+   padding: 5px;
+}
+.working-day{
+    color: #00ff00bb;
+    line-height: 80px;
+}
+.break{
+    color:rgba(255, 0, 0, 0.664);
+}
+.calendar{
+    color:white;
+}
+
+.to{
+    transition: 0.5s;
+    left:1px;
+}
+

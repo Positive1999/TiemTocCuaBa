@@ -10,8 +10,3 @@ window.addEventListener("scroll", function () {
   document.getElementById("arrow-top").addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-  $(document).ready(function () {
-    $('.navbar-toggler').click(function () {
-        $('#navbarNav').toggleClass('show');
-    });
-  });
