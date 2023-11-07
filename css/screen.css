@@ -1,32 +1,40 @@
-@media (max-width: 430px){
-    .phone-call{
-      display: none;
-    }
-    .oclock h4{
-      font-size:large;
-    }
-    .contact-phone .sdt{
-      display: none;
-    }
+@media (max-width: 429px) and (min-width:340px)  {
+
+  .navbar1 ul li h3 {
+    font-size: 11px;
+    margin-bottom: 0;
   }
-  @media (min-width: 769px) {
-  
-    .navbar1 h1,
-    .navbar1 h3 {
-      font-size: 20px;
-      margin-bottom: 0;
-    }
-    .phone-call{
-      display: block;
-    }
+  .titleTiemToc{
+    display: none;
   }
-  
-  @media (max-width: 768px) {
-  
-    .navbar1 h1,
-    .navbar1 h3 {
-      font-size: 16px;
-      margin-bottom: 0;
-    }
-   
+  .fa-scissors{
+    font-size: 20px;
   }
+}
+
+@media (max-width: 430px) {
+  .oclock h4 {
+    font-size: large;
+  }
+  .contact-phone .sdt {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .navbar1 h1,
+  .navbar1 h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navbar1 h1,
+  .navbar1 h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
