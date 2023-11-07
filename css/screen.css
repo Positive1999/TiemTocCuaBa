@@ -1,11 +1,8 @@
 @media (max-width: 429px) and (min-width:340px)  {
-
+  .navbar1 ul li h1,
   .navbar1 ul li h3 {
     font-size: 11px;
     margin-bottom: 0;
-  }
-  .titleTiemToc{
-    display: none;
   }
   .fa-scissors{
     font-size: 20px;
