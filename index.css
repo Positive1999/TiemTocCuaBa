@@ -89,8 +89,8 @@
 
 .phone {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   z-index: 999;
   background-color: #000000;
   padding: 10px 20px;
