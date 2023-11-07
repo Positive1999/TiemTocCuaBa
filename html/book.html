@@ -15,26 +15,17 @@
 
 <body>
 
-    <div class="modal">
-        <div class="modal-content">
-            <h2>Thông báo</h2>
-            <p id="modal-message"></p>
-            <button onclick="closeModal()">Đóng</button>
-        </div>
-    </div>
-    <!-- hôp thoại -->
-
     <div id="form">
         <a class="return" href="../index.html">
             <i class="fa-solid fa-arrow-left"></i> 
             <span class="return-text">Quay lại</span>
         </a>
-
+    
         <div class="name">
             <label for="name">Tên khách hàng</label>
             <input type="text" id="name">
         </div>
-
+    
         <div class="types">
             <label for="">Kiểu cắt</label>
             <select id="cut-type">
@@ -45,23 +36,31 @@
                 <option value="3">Đầu bằng</option>
             </select>
         </div>
-
+    
         <div class="days">
             <label for="day">Ngày cắt</label>
             <input type="date" id="day">
         </div>
-
+    
         <div class="tel">
             <label for="phone">Số điện thoại</label>
             <input type="text" id="phone">
         </div>
-
+    
         <div class="mail">
             <label for="mail">Mail</label>
             <input type="email" id="mail">
         </div>
-
-        <input type="submit" onclick="book()" value="ĐẶT LỊCH">
+    
+        <input type="submit" onclick="book(event)" value="ĐẶT LỊCH">
+    </div>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Thông báo</h2>
+            <p id="modal-message"></p>
+            <button onclick="closeModal()">Đóng</button>
+        </div>
     </div>
 
     <script src="../js/book.js"></script>
