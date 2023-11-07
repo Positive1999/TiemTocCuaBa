@@ -257,31 +257,8 @@
         <!-- het footer -->
     </div>
 
-    <a href="tel:+84334936638">0334936638</a>
-
-
     <script src="js/arrowUp.js"></script>
     <script src="js/oclock.js"></script>
     <script src="js/phone.js"></script>
-
-    <script src="https://sdk.twilio.com/js/client/v1.12/twilio.js"></script>
-    <script>
-        function makeCall(phoneNumber) {
-            // Khởi tạo Twilio Client với thông tin tài khoản của bạn
-            var twilio = new Twilio('YOUR_TWILIO_ACCOUNT_SID', 'YOUR_TWILIO_AUTH_TOKEN');
-
-            // Sử dụng Twilio Client để thực hiện cuộc gọi điện thoại
-            twilio.calls.create({
-                url: 'http://your-webhook-url.com', // Địa chỉ webhook để xử lý cuộc gọi
-                to: phoneNumber, // Số điện thoại muốn gọi
-                from: 'YOUR_TWILIO_PHONE_NUMBER' // Số điện thoại Twilio của bạn
-            }).then(function (call) {
-                console.log('Đã bắt đầu cuộc gọi: ' + call.sid);
-            }).catch(function (error) {
-                console.error('Lỗi khi gọi điện thoại: ' + error);
-            });
-        }
-    </script>
 </body>
-
 </html>
