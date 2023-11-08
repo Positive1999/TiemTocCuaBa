@@ -7,6 +7,10 @@
   .fa-scissors{
     font-size: 20px;
   }
+  .oclock-detail {
+    max-width: 200px;
+    max-height:auto;
+}
 }
 
 @media (max-width: 430px) {
