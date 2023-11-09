@@ -85,8 +85,43 @@
 }
 /* het banner */
 
+.connected{
+  background: #000;
+  padding: 5%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.connected h3, .connected label{
+  color: #ffffff;
+}
+.f-email{
+  width: 100%;
+}
+input.f-email{
+  border:none;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+}
+.connected button{
+  border:none;
+  margin-top: 20px;
+  background-color: #1877f2;
+  color:#fff;
+  padding: 6px 9px;
+  border-radius: 3px;
+}
 
 
+.Notification{
+  display: none;
+}
+.Notification .Notification__result{
+  position: fixed;
+  top:10%;
+  right:0%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
 
 
