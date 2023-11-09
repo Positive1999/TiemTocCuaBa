@@ -6,11 +6,12 @@
     --color-white: #fff;
     --color-off-door:rgb(255, 0, 0);
     --color-text-intro:#663300;
+    --color-simple:#333;
     --bg-btn: #4CAF50;
     --bg: #000000; 
 }
 .intro-content {
-    color: var(--color-text-intro);
+    color: var(--color-simple);
     /* Màu nâu đậm */
 
     /* color:#0000FF; Màu xanh đậm*/
@@ -22,10 +23,18 @@
 b {
     color: var(--color-text);
 }
+
+.banner img{
+    width: 80%;  
+}
+.banner .des-img{
+    color:var(--color-simple);
+}
+
 .return {
     position: fixed;
     top: 10%;
-    right: 5%;
+    right: 0%;
     text-decoration: none;
     cursor: pointer;
     background-color: var(--bg-btn);

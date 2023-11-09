@@ -2,10 +2,12 @@
   --color-icon: #00ff00;
   --color-text: #111;
   --color-in-btn: #fff;
-  --color-fb:#1877f2;
-  --bg-btn:#4CAF50;
-  --bg:#000000;
-
+  --color-fb: #1877f2;
+  --color-white: #fff;
+  --color-off-door:rgb(255, 0, 0);
+  --color-text-intro:#663300;
+  --bg-btn: #4CAF50;
+  --bg: #000000; 
 }
 
 .banner{
@@ -66,27 +68,27 @@
 /* het banner */
 
 .connected{
-  background: #000;
+  background: var(--bg);
   padding: 5%;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
 .connected h3, .connected label{
-  color: #ffffff;
+  color: var(--color-white);
 }
 .f-email{
   width: 100%;
 }
 input.f-email{
   border:none;
-  border-bottom: 1px solid grey;
   margin-top: 20px;
+  padding: 8px;
 }
 .connected button{
   border:none;
   margin-top: 20px;
   background-color: var(--color-fb) ;
-  color:#fff;
+  color:var(--color-white);
   padding: 6px 9px;
   border-radius: 3px;
 }
@@ -103,7 +105,9 @@ input.f-email{
   border-radius: 10px;
 }
 
-
+.fa-facebook{
+  color:var(--color-fb)
+}
 
 
 
