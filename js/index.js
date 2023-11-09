@@ -1,16 +1,13 @@
 var sliderImg = document.querySelector('.slider img');
+var images = ['images/banner.jpg', 'images/banner2.jpg'];
+var index = 0;
 
-changeImg2 = function(){
-    sliderImg.src = 'images/banner.jpg';
-    setTimeout(changeImg, 3000); // Thay đổi ảnh sau 3 giây
-}
+setInterval(function() {
+  sliderImg.style.transition = '0.8s';
+  sliderImg.src = images[index];
+  index = (index + 1) % images.length;
+}, 3000);
 
-changeImg = function(){
-    sliderImg.src = 'images/banner2.jpg';
-    setTimeout(changeImg2, 3000); // Thay đổi ảnh sau 3 giây
-}
-
-changeImg(); // Bắt đầu thay đổi ảnh
 
 
 
