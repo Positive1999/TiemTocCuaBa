@@ -1,7 +1,33 @@
-
+.banner{
+  position: relative;
+  width: 100%;
+}
+.slider{
+  overflow: hidden;
+}
 .banner img {
   width: 100%;
   margin-top: 55px;
+  background-size: cover;
+}
+
+.intro{
+  position: absolute;
+  left: 50%;
+  bottom:8%;
+  transform: translateX(-50%);
+}
+.intro a{
+ text-decoration: none;
+}
+.intro a .btn-intro{
+  padding: 10px 19px;
+  background-color:#00ff00;
+  color:#000000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 /* het banner */
 
