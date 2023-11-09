@@ -14,7 +14,7 @@ b {
 .return {
     position: fixed;
     top: 50%;
-    left: 7%;
+    right: 0%;
     transform: translateX(-50%);
     border: 1px solid #00ff00;
     background-color: #00ff00;
