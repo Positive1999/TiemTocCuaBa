@@ -1,0 +1,68 @@
+.intro-content {
+    color: #663300;
+    /* Màu nâu đậm */
+
+    /* color:#0000FF; Màu xanh đậm*/
+    /* color:#333333; Màu xám đậm*/
+    /* color:#000000; Màu chữ đen*/
+    /* color:#006600; Màu xanh lá cây đậm*/
+    /* color:#666666; Màu xám trung bình*/
+}
+b {
+    color: #000000;
+}
+.return {
+    position: fixed;
+    top: 50%;
+    left: 7%;
+    transform: translateX(-50%);
+
+    border: 1px solid #00ff00;
+    background-color: #00ff00;
+    color: #000000;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.return:hover {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #00ff00;
+
+    transition: .5s;
+}
+.BookLink {
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    padding: 16px 0;
+}
+.BookLink a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.BookLink .fa-check {
+    color: #00ff00;
+}
+
+.scroll{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #000;
+    height: 8px;
+    width: 100%;
+}
+.scroll .value{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #00ff00;
+    width: 0%;
+}
