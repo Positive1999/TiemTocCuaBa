@@ -11,6 +11,12 @@
     max-width: 200px;
     max-height:auto;
 }
+  .oclock-detail h5 {
+    font-size: 18px;
+}
+.morning, .break, .afternoon, .calendar{
+  font-size: 15px;
+}
 }
 
 @media (max-width: 430px) {
