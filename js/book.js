@@ -24,12 +24,14 @@ function book(event) {
     var cutTypeSelect = document.getElementById('cut-type');
     var inputDay = document.getElementById('day');
     var inputPhone = document.getElementById('phone');
+    var inputAddress = document.getElementById('address');
 
     if (
         inputName.value === '' ||
         cutTypeSelect.value === '' ||
         inputDay.value === '' ||
-        inputPhone.value === ''
+        inputPhone.value === '' ||
+        inputAddress.value === ''
     ) {
         openModal('Bạn cần nhập đủ thông tin!');
     } else {
@@ -44,7 +46,9 @@ function book(event) {
             '\n Ngày cắt: ' +
             inputDay.value +
             '\nSố điện thoại: ' +
-            inputPhone.value;
+            inputPhone.value +
+            '\nĐịa chỉ: ' +
+            inputAddress.value;
 
         var mailtoLink =
             'mailto:' +
@@ -65,6 +69,7 @@ function book(event) {
     cutTypeSelect.value = '';
     inputDay.value = '';
     inputPhone.value = '';
+    inputAddress.value = '';
 }
 
 
