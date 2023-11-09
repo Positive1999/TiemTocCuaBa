@@ -31,7 +31,7 @@ b {
     color:var(--color-simple);
 }
 
-.return {
+a.return {
     position: fixed;
     top: 10%;
     right: 0%;
@@ -44,7 +44,7 @@ b {
     width: 50px;
     border-radius: 10px;
 }
-.return .fa-arrow-rotate-left{
+a.return .fa-arrow-rotate-left{
     position: absolute;
     top:50%; left:50%;
     transform: translate(-50%, -50%);
@@ -62,7 +62,7 @@ b {
 .BookLink .fa-check {
     color: var(--color-icon);
 }
-.scroll{
+/* .scroll{
     position: fixed;
     top:0;
     left:0; 
@@ -79,4 +79,4 @@ b {
     bottom:0;
     background-color: var(--color-icon);
     width: 0%;
-}
+} */
