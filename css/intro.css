@@ -16,7 +16,6 @@ b {
     top: 50%;
     left: 7%;
     transform: translateX(-50%);
-
     border: 1px solid #00ff00;
     background-color: #00ff00;
     color: #000000;
@@ -25,12 +24,10 @@ b {
     z-index: 9999;
     transition: .5s;
 }
-
 .return:hover {
     border: 1px solid #000000;
     background-color: #000000;
     color: #00ff00;
-
     transition: .5s;
 }
 .BookLink {
@@ -43,15 +40,13 @@ b {
     text-decoration: none;
     color: #fff;
 }
-
 .BookLink .fa-check {
     color: #00ff00;
 }
-
 .scroll{
     position: fixed;
     top:0;
-    left:0;
+    left:0; 
     right:0;
     background: #000;
     height: 5px;
