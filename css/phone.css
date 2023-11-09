@@ -1,3 +1,12 @@
+:root {
+    --color-icon: #00ff00;
+    --color-text: #111;
+    --color-in-btn: #fff;
+    --color-fb: #1877f2;
+    --color-white: #fff;
+    --bg-btn: #4CAF50;
+    --bg: #000000; 
+}
 .contact-phone {
     position: fixed;
     bottom: 10px;
@@ -5,7 +14,7 @@
     border-radius: 30px;
     padding: 8px 12px;
     z-index: 9999;
-    background-color: #000;
+    background-color: var(--bg);
     padding: 10px 20px;
 }
 
@@ -18,7 +27,7 @@
 }
 
 .contact-phone i {
-    color: #00ff00;
+    color: var(--color-icon);
     font-size: 20px;
     animation: phone 1s infinite ease;
     transition: 0.5s;
@@ -26,7 +35,7 @@
 
 .sdt {
     margin-left: 5px;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 16px;
     font-weight: bold;
 }

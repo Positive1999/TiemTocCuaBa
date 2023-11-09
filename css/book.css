@@ -18,19 +18,24 @@ body {
     border-radius: 15px;
 }
 
-#form>a {
+#form>a.return {
     position: fixed;
     top: 10%;
-    left: 5%;
+    right: 5%;
     text-decoration: none;
     cursor: pointer;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 20px 20px;
+    height:50px;
+    width: 50px;
+    border-radius: 10px;
 }
 
-#form>a.return {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 6px 9px;
-    border-radius: 10px;
+#form>a.return .fa-arrow-rotate-left{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .name,

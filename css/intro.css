@@ -1,5 +1,16 @@
+:root {
+    --color-icon: #00ff00;
+    --color-text: #111;
+    --color-in-btn: #fff;
+    --color-fb: #1877f2;
+    --color-white: #fff;
+    --color-off-door:rgb(255, 0, 0);
+    --color-text-intro:#663300;
+    --bg-btn: #4CAF50;
+    --bg: #000000; 
+}
 .intro-content {
-    color: #663300;
+    color: var(--color-text-intro);
     /* Màu nâu đậm */
 
     /* color:#0000FF; Màu xanh đậm*/
@@ -9,46 +20,45 @@
     /* color:#666666; Màu xám trung bình*/
 }
 b {
-    color: #000000;
+    color: var(--color-text);
 }
 .return {
     position: fixed;
-    top: 50%;
-    right: 0%;
-    transform: translateX(-50%);
-    border: 1px solid #00ff00;
-    background-color: #00ff00;
-    color: #000000;
-    padding: 20px;
-    border-radius: 50%;
-    z-index: 9999;
-    transition: .5s;
+    top: 10%;
+    right: 5%;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--bg-btn);
+    color: var(--color-white);
+    padding: 20px 20px;
+    height:50px;
+    width: 50px;
+    border-radius: 10px;
 }
-.return:hover {
-    border: 1px solid #000000;
-    background-color: #000000;
-    color: #00ff00;
-    transition: .5s;
+.return .fa-arrow-rotate-left{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
 }
 .BookLink {
     width: 100%;
     text-align: center;
-    background: #000000;
+    background: var(--bg);
     padding: 16px 0;
 }
 .BookLink a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
 }
 .BookLink .fa-check {
-    color: #00ff00;
+    color: var(--color-icon);
 }
 .scroll{
     position: fixed;
     top:0;
     left:0; 
     right:0;
-    background: #000;
+    background: var(--bg);
     height: 5px;
     width: 100%;
 }
@@ -58,6 +68,6 @@ b {
     left:0;
     right:0;
     bottom:0;
-    background-color: #00ff00;
+    background-color: var(--color-icon);
     width: 0%;
 }

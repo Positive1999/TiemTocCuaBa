@@ -1,27 +1,41 @@
+:root {
+    --color-icon: #00ff00;
+    --color-text: #111;
+    --color-in-btn: #fff;
+    --color-fb: #1877f2;
+    --color-white: #fff;
+    --color-off-door:rgb(255, 0, 0);
+    --bg-btn: #4CAF50;
+    --bg: #000000; 
+}
+
 .navbar1 {
-    background-color: #000000;
+    background-color: var(--bg);
     width: 100%;
 }
+
 .navbar1 ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 0;
 }
+
 .navbar1 ul li {
     padding: 20px 20px;
-    color: white;
+    color: var(--color-white);
 }
+
 .navbar1 ul li h3 a {
     text-decoration: none;
     padding: 10px 20px;
-    color: #ffffff;
+    color: var(--color-white);
     cursor: pointer;
     border: 1px solid;
 }
 
 .navbar1 ul li h3 a .fa-check {
-    color: #00ff00;
+    color: var(--color-icon);
 }
 
 @keyframes throw-rotate {
@@ -36,6 +50,6 @@
 
 #scissors-icon {
     animation: throw-rotate 20s linear infinite;
-    color: #00ff00;
+    color: var(--color-icon);
     transition: 0.5s;
 }

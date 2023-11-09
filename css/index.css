@@ -1,43 +1,23 @@
+:root {
+  --color-icon: #00ff00;
+  --color-text: #111;
+  --color-in-btn: #fff;
+  --color-fb:#1877f2;
+  --bg-btn:#4CAF50;
+  --bg:#000000;
+
+}
+
 .banner{
   position: relative;
   width: 100%;
-}
-.slider{
-  overflow: hidden;
-
 }
 .banner img {
   width: 100%;
   margin-top: 55px;
   transition :cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-
-/* .intro{
-  position: absolute;
-  left: 50%;
-  top:50%;
-  transform: translate(-50% , -50%);
-}
-.intro a{
- text-decoration: none;
-}
-.intro a .btn-intro{
-  padding: 10px 19px;
-  background-color:#00ff00;
-  color:#000000;
-  border: none;
-  border-radius: 10px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  transition: .5s;
-}
-.intro a:hover .btn-intro{
-  background-color:#000000;
-  color: #00ff00;
-  transition: .5s;
-} */
-
-
+/* het banner */
 
 .intro {
   position: absolute;
@@ -52,8 +32,8 @@
 
 .intro a .btn-intro {
   padding: 10px 19px;
-  background-color: #00ff00;
-  color: #000000;
+  background-color: var(--color-icon);
+  color:var(--color-text);
   border: none;
   border-radius: 10px;
   font-weight: bolder;
@@ -80,8 +60,8 @@
 }
 
 .intro a:hover .btn-intro {
-  background-color: #000000;
-  color: #00ff00;
+  background-color: var(--color-text);
+  color: var(--color-icon);
 }
 /* het banner */
 
@@ -105,7 +85,7 @@ input.f-email{
 .connected button{
   border:none;
   margin-top: 20px;
-  background-color: #1877f2;
+  background-color: var(--color-fb) ;
   color:#fff;
   padding: 6px 9px;
   border-radius: 3px;

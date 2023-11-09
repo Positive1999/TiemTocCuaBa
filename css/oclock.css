@@ -1,1 +1,56 @@
-.oclock{display:inline-block;overflow:hidden;}#openStatus,#closeStatus{padding:10px 20px;width:300px;}.oclock-detail{position:fixed;top:50%;left:-100%;transform:translateY(-50%);width:350px;height:350px;background:rgb(0,0,0);text-align:center;color:white;border-radius:10px;transition:10s;}.oclock-detail h5{margin-top:15px;}.working-day{color:#00ff00bb;line-height:80px;}.break{color:rgba(255,0,0,0.664);}.calendar{color:white;}.to{transition:0.5s;left:1px;}
+:root {
+    --color-icon: #00ff00;
+    --color-text: #111;
+    --color-in-btn: #fff;
+    --color-fb: #1877f2;
+    --color-white: #fff;
+    --color-off-door:rgb(255, 0, 0);
+    --bg-btn: #4CAF50;
+    --bg: #000000; 
+}
+.oclock {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#openStatus,
+#closeStatus {
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.oclock-detail {
+    position: fixed;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    background: var(--bg);
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 10px;
+    transition: 10s;
+}
+
+.oclock-detail h5 {
+    margin-top: 15px;
+}
+
+.working-day {
+    color: var(--bg-btn);
+    line-height: 80px;
+}
+
+.break {
+    color: var(--color-off-door);
+}
+
+.calendar {
+    color: var(--color-white);
+}
+
+.to {
+    transition: 0.5s;
+    left: 1px;
+}

@@ -1,18 +1,27 @@
+:root {
+    --color-icon: #00ff00;
+    --color-text: #111;
+    --color-in-btn: #fff;
+    --color-fb: #1877f2;
+    --color-white: #fff;
+    --bg-btn: #4CAF50;
+    --bg: #000000; 
+}
 #arrow-top {
     position: fixed;
     bottom: 60px;
     right: 20px;
-    border: 1px solid #000000;
-    background-color: #000000;
-    color: #00ff00;
+    border: 1px solid var(--bg);
+    background-color: var(--bg);
+    color: var(--color-icon);
     padding: 20px;
     border-radius: 50%;
     z-index: 9999;
     transition: .5s;
 }
 #arrow-top:hover {
-    border: 1px solid #00ff00;
-    background-color: #00ff00;
-    color: #000000;
+    border: 1px solid var(--color-icon);
+    background-color: var(--color-icon);
+    color: var(--bg);
     transition: .5s;
 }
