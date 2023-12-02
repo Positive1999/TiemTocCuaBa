@@ -1,5 +1,5 @@
 var sliderImg = document.querySelector('.slider img');
-var images = ['images/banner.jpg', 'images/banner2.jpg'];
+var images = ['images/banner.jpg', 'images/banner3.png', 'images/banner4.jpg'];
 var index = 0;
 
 setInterval(function() {
